@@ -2,7 +2,7 @@
 How to proxy a python script through Burp Suite
 
 
-1. Download the certificat from Burp Suite url
+1. Download the certificate from Burp Suite url
 * Open your web browser and go to http://burpsuite.
 * Click on “CA Certificate” button on the top right corner and save the certificate locally.
 ![image](https://user-images.githubusercontent.com/36945847/152576472-5bc54884-23b7-4756-a11a-3159f6028937.png)
