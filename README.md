@@ -23,7 +23,7 @@ os.environ['http_proxy'] = proxy
 os.environ['HTTP_PROXY'] = proxy
 os.environ['https_proxy'] = proxy
 os.environ['HTTPS_PROXY'] = proxy
-os.environ['REQUESTS_CA_BUNDLE'] = "/path/to/cert/cacert.pem"
+os.environ['REQUESTS_CA_BUNDLE'] = "/path/to/cert/certificate.pem"
 ```
 ![image](https://user-images.githubusercontent.com/36945847/152576577-1a635d4f-71d6-403f-bb4b-a0e3084fc922.png)
 
