@@ -16,12 +16,14 @@ How to proxy a python script through Burp Suite
 3. Edit your python code
 * Edit your python code with the following lines just below the import of Requests and OS modules:
 ```
-proxy = ‘127.0.0.1:8080’
-os.environ[‘http_proxy’] = proxy
-os.environ[‘HTTP_PROXY’] = proxy
-os.environ[‘https_proxy’] = proxy
-os.environ[‘HTTPS_PROXY’] = proxy
-os.environ[‘REQUESTS_CA_BUNDLE’] = “/path/to/cert/cacert.pem”
+import os
+
+proxy = 'http://127.0.0.1:8080'
+os.environ['http_proxy'] = proxy
+os.environ['HTTP_PROXY'] = proxy
+os.environ['https_proxy'] = proxy
+os.environ['HTTPS_PROXY'] = proxy
+os.environ['REQUESTS_CA_BUNDLE'] = "/path/to/cert/cacert.pem"
 ```
 ![image](https://user-images.githubusercontent.com/36945847/152576577-1a635d4f-71d6-403f-bb4b-a0e3084fc922.png)
 
